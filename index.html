@@ -703,13 +703,11 @@
 <script>
   // Reviews
   const reviews = [
-    { num: "01", name: "Omar Sukkar", time: "3 years ago", quote: "this place is unparalleled.",
-      text: "I've been smoking hookah for 20+ years. I'm very picky and selective to where I go. I've been to many lounges throughout the US — and this place is unparalleled." },
-    { num: "02", name: "Rawan Nasser", time: "3 years ago", quote: "best hookah place in MI.",
+    { num: "01", name: "Rawan Nasser", time: "3 years ago", quote: "best hookah place in MI.",
       text: "Hands down this is the best hookah place in MI. The owner is such a kind person and has the best flavors too. You'll find everything you need in one shop." },
-    { num: "03", name: "Abbas Hachem", time: "a year ago", quote: "would recommend.",
+    { num: "02", name: "Abbas Hachem", time: "a year ago", quote: "would recommend.",
       text: "Really good hookahs, been there about 3 times now and it's been better than all the other places I've been to. Great customer service and they deliver within an hour of ordering." },
-    { num: "04", name: "Aziz Assidi", time: "4 years ago", quote: "famous for orange heads.",
+    { num: "03", name: "Aziz Assidi", time: "4 years ago", quote: "famous for orange heads.",
       text: "Amazing newly remodeled hookah shop, a one stop shop for all your hookah needs. The owner Ali is hands down famous for making the best orange heads in Ypsi and A2." },
   ];
   const reviewList = document.getElementById('review-list');
@@ -751,7 +749,7 @@
       p.innerHTML = `
         <span class="flavor-link-num">${String(i + 1).padStart(2, "0")}</span>
         <span class="flavor-link-name">${name}</span>
-        <span class="flavor-link-arrow">→</span>
+        <span class="flavor-link-arrow"></span>
       `;
       flavorList.appendChild(p);
     });
